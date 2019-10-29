@@ -17,7 +17,7 @@ import com.lordofthejars.nosqlunit.mongodb.MongoDbRule;
 public class WhenANewBookIsCreated {
 
     @ClassRule
-    public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr/local/opt/mongodb-community@4.2").appendSingleCommandLineArguments("-vvv")
+    public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr").appendSingleCommandLineArguments("-vvv")
             .build();
     
     

@@ -13,12 +13,8 @@ import org.junit.Test;
 
 import javax.inject.Inject;
 
-import java.util.List;
-
 import static com.lordofthejars.nosqlunit.mongodb.ManagedMongoDb.MongoServerRuleBuilder.newManagedMongoDbRule;
 import static com.lordofthejars.nosqlunit.mongodb.MongoDbRule.MongoDbRuleBuilder.newMongoDbRule;
-import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.junit.Assert.assertThat;
 
 /**
  * @author minhpham on 23/10/2019
@@ -28,7 +24,7 @@ import static org.junit.Assert.assertThat;
  @UsingDataSet(locations = "initialData.json", loadStrategy = LoadStrategyEnum.CLEAN_INSERT)
  public class UpdateBookNumberOfPages {
      @ClassRule
-     public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr/local/opt/mongodb-community@4.2").appendSingleCommandLineArguments("-vvv")
+     public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr").appendSingleCommandLineArguments("-vvv")
      .build();
 
      @Rule

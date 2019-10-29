@@ -7,7 +7,7 @@ public class MongoDbUtil {
     
     private static DB database;
     
-    static {
+    static{
             MongoClient mongo=new MongoClient("localhost",27017);
             database=mongo.getDB("test");
     }

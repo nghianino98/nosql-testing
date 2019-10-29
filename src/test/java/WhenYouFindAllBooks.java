@@ -34,7 +34,7 @@ public class WhenYouFindAllBooks {
 //    public static final InMemoryMongoDb IN_MEMORY_MONGO_DB = newInMemoryMongoDbRule().build();
     
     @ClassRule
-    public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr/local/opt/mongodb-community@4.2").appendSingleCommandLineArguments("-vvv")
+    public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr").appendSingleCommandLineArguments("-vvv")
             .build();
     
 //    @Rule

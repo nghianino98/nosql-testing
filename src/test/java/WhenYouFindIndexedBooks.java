@@ -26,7 +26,7 @@ import com.mongodb.Mongo;
 public class WhenYouFindIndexedBooks {
     
     @ClassRule
-    public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr/local/opt/mongodb-community@4.2").appendSingleCommandLineArguments("-vvv")
+    public static ManagedMongoDb managedMongoDb = newManagedMongoDbRule().mongodPath("/usr").appendSingleCommandLineArguments("-vvv")
             .build();
 
     @Rule
